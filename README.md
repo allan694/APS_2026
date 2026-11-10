@@ -15,52 +15,52 @@ O trabalho simula a atuação profissional de Engenharia de Software no desenvol
 ## Identificação do Autor
 
 * **Instituição:** Universidade Paulista – UNIP
-* **Curso:** Bacharelado em Ciência da Computação
+* **Curso:** Bacharelado em Ciências da Computação
 * **Aluno:** Allan Alexandre Stanley de Oliveira
-* **RA:** C5090A8[cite: 5]
-* **Ano:** 2026[cite: 5]
+* **RA:** C5090A8
+* **Ano:** 2026
 
 ---
 
 ## Escopo do Sistema (SGA-JA)
 
-O sistema proposto foi projetado como uma aplicação web responsiva para integrar e substituir controles manuais e planilhas dispersas[cite: 5], organizando-se em módulos essenciais:
+O sistema proposto foi projetado como uma aplicação web responsiva para integrar e substituir controles manuais e planilhas dispersas, organizando-se em módulos essenciais:
 
-1. **Módulo de Jovens:** Cadastro, acompanhamento escolar/formativo e controle de remuneração vinculada à produção[cite: 5].
-2. **Módulo de Professores:** Cadastro, alocação de turmas/oficinas e controle de horas/remuneração[cite: 5].
-3. **Módulo de Produtos e Estoque:** Gestão de matérias-primas (plástico reciclado, madeira de reflorestamento), controle de estoque com alerta de níveis mínimos e ordens de fabricação[cite: 1, 5].
-4. **Módulo Comercial & Vendas:** Cadastro de clientes corporativos (B2B/B2C), registro de vendas no mercado interno e suporte à exportação (BRL e USD)[cite: 1, 5].
-5. **Módulo Financeiro:** Controle de fluxo de caixa, despesas operacionais (incluindo pagamento de bolsas aos jovens), receitas e prestação de contas[cite: 5].
-6. **Segurança & Governança:** Autenticação baseada em perfis (RBAC), suporte a 2FA para perfis administrativos e conformidade com a LGPD (Lei nº 13.709/2018)[cite: 4, 5].
+1. **Módulo de Jovens:** Cadastro, acompanhamento escolar/formativo e controle de remuneração vinculada à produção.
+2. **Módulo de Professores:** Cadastro, alocação de turmas/oficinas e controle de horas/remuneração.
+3. **Módulo de Produtos e Estoque:** Gestão de matérias-primas (plástico reciclado, madeira de reflorestamento), controle de estoque com alerta de níveis mínimos e ordens de fabricação.
+4. **Módulo Comercial & Vendas:** Cadastro de clientes corporativos (B2B/B2C), registro de vendas no mercado interno e suporte à exportação (BRL e USD).
+5. **Módulo Financeiro:** Controle de fluxo de caixa, despesas operacionais (incluindo pagamento de bolsas aos jovens), receitas e prestação de contas.
+6. **Segurança & Governança:** Autenticação baseada em perfis (RBAC), suporte a 2FA para perfis administrativos e conformidade com a LGPD (Lei nº 13.709/2018).
 
 ---
 
 ## Modelagem do Sistema
 
-O projeto contempla especificações formais de requisitos e diagramas comportamentais e estruturais[cite: 1, 5]:
+O projeto contempla especificações formais de requisitos e diagramas comportamentais e estruturais:
 
-* **32 Requisitos Funcionais (RF01 a RF32)**[cite: 2, 5]
-* **15 Requisitos Não Funcionais (RNF01 a RNF15)**[cite: 2, 5]
+* **32 Requisitos Funcionais (RF01 a RF32)**
+* **15 Requisitos Não Funcionais (RNF01 a RNF15)**
 * **Modelagem UML:**
-  * **Diagrama de Casos de Uso:** Mapeamento de 12 casos de uso entre 6 perfis de atores[cite: 5].
-  * **Diagrama de Classes:** 18 entidades do domínio, com métodos de negócio, atributos e multiplicidades detalhadas[cite: 2, 5].
+  * **Diagrama de Casos de Uso:** Mapeamento de 12 casos de uso entre 6 perfis de atores.
+  * **Diagrama de Classes:** 18 entidades do domínio, com métodos de negócio, atributos e multiplicidades detalhadas.
 
-*(Os diagramas foram modelados em sintaxe Mermaid e estão disponíveis tanto no relatório quanto nos arquivos do repositório[cite: 2, 5]).*
+*(Os diagramas foram modelados em sintaxe Mermaid e estão disponíveis tanto no relatório quanto nos arquivos do repositório.*
 
 ---
 
 ## Protótipos de Interface
 
-O projeto conta com protótipos navegáveis de média fidelidade criados em **HTML5 e CSS3 puros** (sem frameworks ou dependências externas), seguindo a identidade visual padrão da ONG (azul `#1e5f9e` e verde `#2e7d32`)[cite: 4, 5]:
+O projeto conta com protótipos navegáveis de média fidelidade criados em **HTML5 e CSS3 puros** (sem frameworks ou dependências externas), seguindo a identidade visual padrão da ONG (azul `#1e5f9e` e verde `#2e7d32`):
 
 | Arquivo | Descrição da Interface |
 |---|---|
-| `prototipo_1_login.html` | Tela de autenticação centralizada, recuperação de acesso e aviso LGPD[cite: 4, 5]. |
-| `prototipo_2_dashboard.html` | Painel gerencial com KPIs operacionais, gráficos de vendas/formação e extrato financeiro[cite: 4, 5]. |
-| `prototipo_3_cadastro_jovem.html` | Formulário setorizado (dados pessoais, documentos, endereço, dados escolares) e histórico recente[cite: 4, 5]. |
-| `prototipo_4_estoque.html` | Tabela dinâmica de SKUs, sinalizadores visuais de estoque crítico e histórico de movimentações[cite: 4, 5]. |
+| `prototipo_1_login.html` | Tela de autenticação centralizada, recuperação de acesso e aviso LGPD. |
+| `prototipo_2_dashboard.html` | Painel gerencial com KPIs operacionais, gráficos de vendas/formação e extrato financeiro. |
+| `prototipo_3_cadastro_jovem.html` | Formulário setorizado (dados pessoais, documentos, endereço, dados escolares) e histórico recente. |
+| `prototipo_4_estoque.html` | Tabela dinâmica de SKUs, sinalizadores visuais de estoque crítico e histórico de movimentações. |
 
-> **Como visualizar os protótipos:** Basta clonar o repositório ou baixar os arquivos e abri-los diretamente em qualquer navegador moderno (Chrome, Firefox, Edge, etc.)[cite: 5].
+> **Como visualizar os protótipos:** Basta clonar o repositório ou baixar os arquivos e abri-los diretamente em qualquer navegador moderno (Chrome, Firefox, Edge, etc.).
 
 ---
 
