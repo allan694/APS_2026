@@ -8,7 +8,7 @@
 
 Este repositório contém a documentação completa, especificações de requisitos, modelagem UML e protótipos de interface do sistema **SGA-JA** (Sistema de Gestão Ambiental – Jovens Ambientalistas). 
 
-O trabalho simula a atuação profissional de Engenharia de Software no desenvolvimento do escopo de produto para uma organização sem fins lucrativos fictícia: a **ONG Jovens Ambientalistas**[cite: 1, 5]. A entidade acolhe jovens em vulnerabilidade social, oferece formação profissionalizante por meio de professores ex-alunos e comercializa brinquedos sustentáveis para os mercados nacional e internacional[cite: 1, 5].
+O trabalho simula a atuação profissional de Engenharia de Software no desenvolvimento do escopo de produto para uma organização sem fins lucrativos fictícia: a **ONG Jovens Ambientalistas**. A entidade acolhe jovens em vulnerabilidade social, oferece formação profissionalizante por meio de professores ex-alunos e comercializa brinquedos sustentáveis para os mercados nacional e internacional.
 
 ---
 
