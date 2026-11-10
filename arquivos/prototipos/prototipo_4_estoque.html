@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SGA-JA - Controle de Estoque</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', 'Roboto', Arial, sans-serif; }
+    body { background: #f4f6f9; color: #333; padding: 20px; }
+    .top-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; background: #fff; padding: 14px 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.04); }
+    .filters { display: flex; gap: 10px; align-items: center; }
+    select, input { padding: 8px 10px; border: 1px solid #ccd6e0; border-radius: 5px; font-size: 13px; }
+    .btn-group { display: flex; gap: 10px; }
+    .btn-new { background: #2e7d32; color: #fff; border: none; padding: 9px 16px; border-radius: 5px; font-weight: 600; font-size: 13px; cursor: pointer; }
+    .btn-nav { background: #1e5f9e; color: #fff; text-decoration: none; padding: 9px 16px; border-radius: 5px; font-weight: 600; font-size: 13px; display: inline-block; }
+    .main-grid { display: grid; grid-template-columns: 1fr 300px; gap: 18px; }
+    .table-card { background: #fff; border-radius: 8px; padding: 16px; box-shadow: 0 2px 5px rgba(0,0,0,0.04); }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { padding: 10px; text-align: left; border-bottom: 1px solid #e6ebf1; }
+    th { background: #1e5f9e; color: #fff; font-weight: 600; }
+    tr.critico { background: #ffebee; color: #b71c1c; font-weight: 600; }
+    .badge-ok { background: #e8f5e9; color: #2e7d32; padding: 3px 8px; border-radius: 4px; font-size: 11px; }
+    .badge-alert { background: #c62828; color: #fff; padding: 3px 8px; border-radius: 4px; font-size: 11px; }
+    .side-history { background: #fff; border-radius: 8px; padding: 16px; box-shadow: 0 2px 5px rgba(0,0,0,0.04); border-top: 4px solid #1e5f9e; }
+    .side-history h3 { font-size: 14px; color: #1e5f9e; margin-bottom: 10px; }
+    .hist-item { font-size: 12px; padding: 8px 0; border-bottom: 1px solid #eee; }
+    footer.totals { margin-top: 16px; background: #1e5f9e; color: #fff; padding: 12px 20px; border-radius: 8px; display: flex; justify-content: space-between; font-size: 13px; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="filters">
+      <select><option>Categoria: Todas</option><option>Brinquedos Acabados</option><option>Matéria-Prima Reciclável</option></select>
+      <select><option>Status: Todos</option><option>Normal</option><option>Abaixo do Mínimo</option></select>
+      <input type="text" placeholder="Faixa de Qtd (ex: 0 - 500)">
+    </div>
+    <div class="btn-group">
+      <button class="btn-new" onclick="alert('Formulário de novo produto.');">+ Novo Produto</button>
+      <a href="prototipo_2_dashboard.html" class="btn-nav">← Voltar ao Dashboard</a>
+    </div>
+  </div>
+  <div class="main-grid">
+    <div class="table-card">
+      <table>
+        <thead>
+          <tr><th>Código</th><th>Produto</th><th>Categoria</th><th>Quantidade</th><th>Estoque Mínimo</th><th>Status</th><th>Ações</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>SKU-001</td><td>Carrinho Ecológico Reflorestamento</td><td>Brinquedo Madeira</td><td>420 un.</td><td>150 un.</td><td><span class="badge-ok">Normal</span></td><td>Editar | Movimentar</td></tr>
+          <tr class="critico"><td>SKU-014</td><td>Blocos de Montar PET Reciclado (Kit 50pçs)</td><td>Brinquedo Polímero</td><td>65 un.</td><td>200 un.</td><td><span class="badge-alert">Estoque Crítico</span></td><td>Editar | Repor</td></tr>
+          <tr><td>SKU-022</td><td>Tabuleiro Trilha da Floresta</td><td>Jogos Educativos</td><td>310 un.</td><td>100 un.</td><td><span class="badge-ok">Normal</span></td><td>Editar | Movimentar</td></tr>
+          <tr class="critico"><td>INS-008</td><td>Grânulos de Plástico HDPE Reciclado (kg)</td><td>Insumo / Matéria-Prima</td><td>40 kg</td><td>120 kg</td><td><span class="badge-alert">Estoque Crítico</span></td><td>Editar | Repor</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <aside class="side-history">
+      <h3>Histórico: SKU-014 (Blocos PET)</h3>
+      <div class="hist-item"><strong>10/11/2026 - Saída (Venda #892)</strong><br>- 150 un. • Cliente: Rede EcoBrinq SP</div>
+      <div class="hist-item"><strong>07/11/2026 - Entrada (OP #115)</strong><br>+ 80 un. • Turma Polímeros Manhã</div>
+      <div class="hist-item"><strong>03/11/2026 - Saída (Exportação #401)</strong><br>- 200 un. • Cliente: GreenKids Portugal</div>
+    </aside>
+  </div>
+  <footer class="totals">
+    <span>Total de SKUs Ativos: 45 itens</span>
+    <span>Volume Total em Estoque: 4.850 unidades</span>
+    <span>Alertas de Estoque Mínimo (RF13): 2 itens críticos</span>
+  </footer>
+</body>
+</html>
