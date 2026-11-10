@@ -64,18 +64,24 @@ O projeto conta com protótipos navegáveis de média fidelidade criados em **HT
 
 ---
 
-## Estrutura de Diretórios Sugerida
+## Estrutura de Diretórios
 
 ```text
-├── docs/
-│   ├── Allan_Alexandre_APS_Engenharia_Requisitos.pdf   # Documento acadêmico final
-│   └── diagramas/                                     # Imagens renderizadas da UML
-│       ├── caso_de_uso.png
-│       └── diagrama_classes.png
-├── prototipos/
-│   ├── prototipo_1_login.html                         # Interface de Login
-│   ├── prototipo_2_dashboard.html                     # Dashboard principal
-│   ├── prototipo_3_cadastro_jovem.html                # Formulário de Jovens
-│   └── prototipo_4_estoque.html                       # Controle de Estoque
-├── LICENSE                                            # Licença do projeto
-└── README.md                                          # Apresentação do repositório
+├── arquivos/
+│   ├── documentos/
+│   │   ├── Allan_Alexandre_APS_Engenharia_Requisitos.pdf   # Relatório final formatado
+│   │   └── diagramas/                                     # Imagens UML renderizadas
+│   │       ├── caso_de_uso.png
+│   │       └── diagrama_classes.png
+│   ├── prototipos/
+│   │   ├── prototipo_1_login.html                         # Interface de Login
+│   │   ├── prototipo_2_dashboard.html                     # Dashboard principal
+│   │   ├── prototipo_3_cadastro_jovem.html                # Formulário de Jovens
+│   │   └── prototipo_4_estoque.html                       # Controle de Estoque
+│   └── texto/
+│       └── trabalho_completo.docx                         # Arquivo editável do texto final
+├── video/
+│   ├── apresentacao_sga_ja.mp4                            # Vídeo da apresentação da APS
+│   └── README.md                                          # Roteiro ou link alternativo do vídeo
+├── LICENSE                                                # Licença do projeto
+└── README.md                                              # Documentação principal do repositório
