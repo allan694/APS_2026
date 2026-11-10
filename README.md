@@ -81,7 +81,6 @@ O projeto conta com protótipos navegáveis de média fidelidade criados em **HT
 │   └── texto/
 │       └── trabalho_completo.docx                         # Arquivo editável do texto final
 ├── video/
-│   ├── apresentacao_sga_ja.mp4                            # Vídeo da apresentação da APS
-│   └── README.md                                          # Roteiro ou link alternativo do vídeo
+│   └── apresentacao_sga_ja.mp4                            # Vídeo da apresentação da APS
 ├── LICENSE                                                # Licença do projeto
 └── README.md                                              # Documentação principal do repositório
